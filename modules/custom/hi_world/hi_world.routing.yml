@@ -1,0 +1,8 @@
+
+hi_world.hi_world_controller_hiworld:
+  path: '/hi/world'
+  defaults:
+    _controller: '\Drupal\hi_world\Controller\HiWorldController::hiworld'
+    _title: 'Hi World'
+  requirements:
+    _permission: 'access content'

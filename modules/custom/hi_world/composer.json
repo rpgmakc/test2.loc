@@ -1,0 +1,13 @@
+{
+    "name": "hi_world",
+    "type": "drupal-module",
+    "description": "Say Hi , world",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/hi_world",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/hi_world",
+        "source": "http://cgit.drupalcode.org/hi_world",
+    },
+}

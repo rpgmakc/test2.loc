@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains hi_world.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function hi_world_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the hi_world module.
+    case 'help.page.hi_world':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Say Hi , world') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function hi_world_theme() {
+  return [
+    'hi_world' => [
+      'render element' => 'children',
+    ],
+  ];
+}
